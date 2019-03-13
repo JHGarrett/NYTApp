@@ -1,0 +1,1 @@
+alert("E rocks and loves the Patriots");
