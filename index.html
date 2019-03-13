@@ -16,8 +16,6 @@
         <!-- custom css -->
         <link rel="stylesheet" href="assets/css/style.css">    
     
-        <!-- JQ -->
-        <script src="https://code.jquery.com/jquery.js"></script>
 </head>
 <body>
 <!-- this is the start of the search parameters -->
@@ -26,11 +24,12 @@
             <h1>New York Times Search</h1>
         </div>  
         <div class="row searchParameters">
-            <div class="rowTopper" >Search Parameters</div>
+            <div class="rowTopper">Search Parameters</div>
 <!-- search term row -->              
         <div class="rowSearch">
             <div class="col-3">Search Term:</div>
-            <div class="col-9"><input type="text" id="search" name="searchTerm" value=""></div> 
+            <div class="col-9"><input type="text" name="searchTerm" id="search" value=""></div> 
+
         </div>
 <!-- end of row -->
 <!-- row with number of records to search... this will need an option drop down to select the number -->
@@ -55,12 +54,17 @@
         <div class="row topArticles">
                 <div class="rowTopper">Top Articles</div>
                 <div class="articlesList"></div>
-            </div>
+        </div>
 <!-- end row -->
+    <button id="search-button">Search</button>
+
 
     </div>
 <!-- import JS file -->
 <script src="assets/javascript/app.js"></script>
+<!-- JQ -->
+<script src="https://code.jquery.com/jquery.js"></script>
+
 
 </body>
 </html>
