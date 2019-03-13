@@ -1,0 +1,66 @@
+<!-- api key 29vtt7W1RJuvNa9JG9mhtfGlYQGIa23D -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New York Times Search</title>
+        <!-- reset css -->
+        <link rel="stylesheet" href="assets/css/reset.css">
+
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+        <!-- custom css -->
+        <link rel="stylesheet" href="assets/css/style.css">    
+    
+        <!-- JQ -->
+        <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+<body>
+<!-- this is the start of the search parameters -->
+    <div class="wrapper flex flex-justify-center flex-align-center">    
+        <div class="row header">
+            <h1>New York Times Search</h1>
+        </div>  
+        <div class="row searchParameters">
+            <div class="rowTopper">Search Parameters</div>
+<!-- search term row -->              
+        <div class="rowSearch">
+            <div class="col-3">Search Term:</div>
+            <div class="col-9"><input type="text" name="searchTerm" value=""></div> 
+        </div>
+<!-- end of row -->
+<!-- row with number of records to search... this will need an option drop down to select the number -->
+        <div class="rowSearch">
+            <div class="col-3">Number of Records to Retrieve:</div>
+            <div class="col-9"><input type="Number" name="numberRecords"></div>
+        </div>
+<!-- end row -->
+<!-- row with the start year for the search -->
+        <div class="rowSearch">
+            <div class="col-3">Start Year (Optional):</div>
+            <div class="col-9"><input type="Number" name="startYear"></div>
+        </div>
+<!-- end row -->
+<!-- row with the last year to search up to -->
+        <div class="rowSearch">
+            <div class="col-3">End Year (Optional):</div>
+            <div class="col-9"><input type="Number" name="endYear"></div>
+        </div>
+<!-- end row -->
+<!-- this is where the results will display -->
+        <div class="row topArticles">
+                <div class="rowTopper">Top Articles</div>
+                <div class="articlesList"></div>
+            </div>
+<!-- end row -->
+
+    </div>
+<!-- import JS file -->
+<script src="assets/javascript/app.js"></script>
+
+</body>
+</html>
