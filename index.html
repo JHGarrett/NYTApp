@@ -26,29 +26,29 @@
             <h1>New York Times Search</h1>
         </div>  
         <div class="row searchParameters">
-            <div class="rowTopper" id="search">Search Parameters</div>
+            <div class="rowTopper" >Search Parameters</div>
 <!-- search term row -->              
         <div class="rowSearch">
             <div class="col-3">Search Term:</div>
-            <div class="col-9"><input type="text" name="searchTerm" value=""></div> 
+            <div class="col-9"><input type="text" id="search" name="searchTerm" value=""></div> 
         </div>
 <!-- end of row -->
 <!-- row with number of records to search... this will need an option drop down to select the number -->
         <div class="rowSearch">
             <div class="col-3">Number of Records to Retrieve:</div>
-            <div class="col-9"><input type="Number" name="numberRecords"></div>
+            <div class="col-9"><input type="Number" id="number" name="numberRecords"></div>
         </div>
 <!-- end row -->
 <!-- row with the start year for the search -->
         <div class="rowSearch">
             <div class="col-3">Start Year (Optional):</div>
-            <div class="col-9"><input type="Number" name="startYear"></div>
+            <div class="col-9"><input type="Number" id="start" name="startYear"></div>
         </div>
 <!-- end row -->
 <!-- row with the last year to search up to -->
         <div class="rowSearch">
             <div class="col-3">End Year (Optional):</div>
-            <div class="col-9"><input type="Number" name="endYear"></div>
+            <div class="col-9"><input type="Number" id="end" name="endYear"></div>
         </div>
 <!-- end row -->
 <!-- this is where the results will display -->
